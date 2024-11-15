@@ -1,3 +1,9 @@
+// primary layout file
+//first, import React
+import React from 'react'
+import Navbar from './Navbar'
+
+// create a component named RootLayout
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +11,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   )
 }

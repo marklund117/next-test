@@ -1,3 +1,7 @@
+// main page file
+// first, import React
+import React from 'react'
+
 export default function Page() {
-  return <div>Page</div>
+  return <div>Test text.</div>
 }
