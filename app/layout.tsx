@@ -1,7 +1,7 @@
 // primary layout file
 //first, import React
 import React from 'react'
-import Navbar from './Navbar'
+import Navbar from './components/Navbar'
 
 // create a component named RootLayout
 export default function RootLayout({
