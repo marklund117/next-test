@@ -5,7 +5,7 @@
 // first, import React
 import React from 'react'
 // we also need useState
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // next, import the link component from next (hmmm)
 import Link from 'next/link'
@@ -18,15 +18,15 @@ export default function Navbar () {
     return (
         // we will use a normal nav element with an unordered list
         // note the lack of <a> tags since we are using the Link component
-        <nav className="flex p-4 h-[56px] shadow-sm">
+        <nav className="flex p-4 h-[56px] shadow-sm justify-between items-center">
             <span className="text-xl font-bold mr-4">Adviser Elite</span>
             <div className="md:hidden">
-                <button onClick={() => setIsOpen(!isOpen)} className="">
-                    menu button
+                <button onClick={() => setIsOpen(!isOpen)} className="border rounded-lg p-1">
+                    X
                 </button>
             </div>
-            <ul className={`list-none flex md:flex-row gap-4 justify-end
-                ${isOpen ? 'flex-col md:flex-row' : 'hidden md:flex-row'}`
+            <ul className={`list-none flex md:flex-row gap-4
+                ${isOpen ? 'flex-col md:flex-row' : 'hidden md:flex'}`
             }>
                 <li>
                     <Link className="transition hover:transiton-all duration-300 hover:bg-[#0098f1] text-slate-100 rounded-lg bg-[#0078be] px-4 py-2" href="/">
