@@ -1,7 +1,4 @@
-// services page file
-// first, import React
-import React from 'react'
-
+// services page
 // import tailwind global CSS
 import '../styles/globals.css'
 
