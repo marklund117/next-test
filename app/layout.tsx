@@ -12,6 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head>
+        <title>Adviser Elite</title>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body>
         <Navbar />
         {children}
