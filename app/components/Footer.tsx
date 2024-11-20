@@ -4,8 +4,17 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className="flex justify-center p-4 bg-[#0078be] text-white">
-            <p>&copy; 2021 Adviser Elite</p>
+        <footer className="flex flex-col items-center p-4 bg-[#111111] text-[#EEEEEE]">
+            <p className="mb-3">Contact us via email at <a className="underline" href="mailto:info@adviserelite.com">info@adviserelite.com</a></p>
+            <p className="mb-3">Follow us on <a className="underline" target="_blank" href="https://www.linkedin.com/company/adviserelite/">Linkedin</a></p>
+            <p className="mb-3">Copyright &copy;2024 Adviser Elite, LLC. All rights reserved.</p>
+            <p className="mb-3">
+                <a className="underline">Privacy Policy</a>
+                <span className="ml-1 mr-1"> | </span>
+                <a className="underline">Terms of Use</a>
+                <span className="ml-1 mr-1"> | </span>
+                <a className="underline">Disclaimers</a>
+            </p>
         </footer>
     )
 }
