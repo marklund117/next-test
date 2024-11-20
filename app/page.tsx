@@ -7,5 +7,5 @@ import './styles/globals.css'
 
 // here's the main dish
 export default function Page() {
-  return <div className="p-4">Main Content.</div>
+  return <div className="p-4 h-[100vh]">Main Content.</div>
 }

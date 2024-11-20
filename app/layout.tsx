@@ -2,6 +2,7 @@
 //first, import React
 import React from 'react'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 // create a component named RootLayout
 export default function RootLayout({
@@ -14,6 +15,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

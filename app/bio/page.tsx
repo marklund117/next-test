@@ -4,5 +4,5 @@ import '../styles/globals.css'
 
 // here's the main dish
 export default function Bio() {
-  return <div className="p-4">Bio Content.</div>
+  return <div className="p-4 h-[100vh]">Bio Content.</div>
 }
