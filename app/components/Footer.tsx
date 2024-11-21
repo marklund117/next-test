@@ -23,7 +23,7 @@ export default function Footer() {
                 <span>Design and development by </span>
                 <a className="underline" target="_blank" href="https://github.com/marklund117">Mark Lund</a>
                 <span className="ml-1 mr-1"> | </span>
-                <span>icons by </span>
+                <span>Icons by </span>
                 <a className="underline" target="_blank" href="https://icons8.com/">Icons8</a>
                 
             </p>
