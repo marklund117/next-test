@@ -7,7 +7,7 @@ import whitelogo from '../images/whitelogo.png'
 
 export default function Footer() {
     return (
-        <footer className="flex flex-col items-center p-4 bg-[#111111] text-[#EEEEEE]">
+        <footer className="flex flex-col items-center p-4 bg-[#111111] text-[#EEEEEE] text-xs md:text-base">
             <img className="h-[32px] mb-6" src={whitelogo.src}/>
             <p className="mb-3">Contact us via email at <a className="underline" href="mailto:info@adviserelite.com">info@adviserelite.com</a></p>
             <p className="mb-3">Follow us on <a className="underline" target="_blank" href="https://www.linkedin.com/company/adviserelite/">Linkedin</a></p>
