@@ -1,4 +1,4 @@
-
+// UNUSED, SWITCHING TO MANTINE
 // Navbar component file
 // useState requires us to define this as a client component
 'use client'
