@@ -10,6 +10,9 @@ import { useState, useEffect } from 'react'
 // next, import the link component from next (hmmm)
 import Link from 'next/link'
 
+// and we need our logo image
+import blacklogo from '../images/blacklogo.png'
+
 // create a component named Navbar
 export default function Navbar () {
 
@@ -18,14 +21,14 @@ export default function Navbar () {
     return (
         // we will use a normal nav element with an unordered list
         // note the lack of <a> tags since we are using the Link component
-        <nav className="flex p-0 m-0 h-[56px] shadow-sm md:justify-between md:items-center">
-            <a href="/" className="text-xl font-bold mr-4 ml-4">Adviser Elite</a>
+        <nav className="flex pt-3 md:p-0 m-0 h-[56px] shadow-sm justify-between md:justify-between md:items-center">
+            <a href="/"><img className="h-[32px] ml-4" src={blacklogo.src}/></a>
             <div className="md:hidden">
-                <button onClick={() => setIsOpen(!isOpen)} className="border rounded-lg p-1">
+                <button onClick={() => setIsOpen(!isOpen)} className="border rounded-lg p-1 mr-4">
                     X
                 </button>
             </div>
-            <ul className={`list-none flex md:flex-row gap-4 h-[56px] p-0 m-0
+            <ul className={`list-none flex md:flex-row gap-4 h-[56px] p-0 m-0 z-[999]
                 ${isOpen ? 'flex-col md:flex-row' : 'hidden md:flex'}`
             }>
                 <li className="p-0 m-0 h-[56px] flex justify-center content-center">

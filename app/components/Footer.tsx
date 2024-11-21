@@ -19,6 +19,14 @@ export default function Footer() {
                 <span className="ml-1 mr-1"> | </span>
                 <a className="underline">Disclaimers</a>
             </p>
+            <p className="mb-3 text-xs">
+                <span>Design and development by </span>
+                <a className="underline" target="_blank" href="https://github.com/marklund117">Mark Lund</a>
+                <span className="ml-1 mr-1"> | </span>
+                <span>icons by </span>
+                <a className="underline" target="_blank" href="https://icons8.com/">Icons8</a>
+                
+            </p>
         </footer>
     )
 }
